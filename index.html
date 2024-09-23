@@ -1,0 +1,537 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body class="font-serif">
+    <!-- component -->
+
+    <video
+      autoplay
+      loop
+      muted
+      class="absolute inset-0 w-full object-cover h-[800] bg-gradient-to-r from-black via-black-900 to-black opacity-100"
+    >
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- component -->
+    <!-- This is an example component -->
+
+    <section class="relative z-10 h-[780]">
+      <nav
+        class="px-2 mb-10 md:m-6 m-0 md:m-6 m-0 bg-white md:bg-transparent text-black md:text-white fixed md:sticky right-0 left-0"
+      >
+        <div class="container flex flex-wrap items-center justify-between">
+          <a href="#" class="flex items-center justify-between mt-4 md:mt-0">
+            <span
+              class="self-center text-lg font-semibold whitespace-nowrap flex"
+              ><lord-icon
+                src="https://cdn.lordicon.com/srbgfvut.json"
+                trigger="loop"
+                stroke="bold"
+                colors="primary:#ffffff,secondary:#ffffff"
+                style="width: 50px; height: 50px"
+              >
+              </lord-icon>
+              <h1 class="text-3xl line-through text-black md:text-white">
+                SPACE<b class="text-yellow-400">X</b>
+              </h1>
+            </span>
+          </a>
+          <div class="flex md:order-2">
+            <div class="relative mr-3 md:mr-0 hidden md:block">
+              <lord-icon
+                src="https://cdn.lordicon.com/kiynvdns.json"
+                trigger="hover"
+                stroke="bold"
+                colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff,quaternary:#ffffff,quinary:#ebe6ef"
+                style="width: 90px; height: 90px"
+              >
+              </lord-icon>
+            </div>
+            <button
+              data-collapse-toggle="mobile-menu-3"
+              type="button"
+              class="md:hidden focus:outline-none focus:ring-2 rounded-lg inline-flex items-center justify-center"
+              aria-controls="mobile-menu-3"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-8 h-8"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-8 h-8"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
+            id="mobile-menu-3"
+          >
+            <ul
+              class="flex-col md:flex-row flex md:space-x-4 mt-4 md:mt-0 md:text-xl md:font-medium"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="line-through md:bg-transparent text-black md:text-white block pl-3 pr-4 py-2 shadow-2xl md:p-0 rounded"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:line-through hover:ease-in text-black md:text-white md:border-0 block pl-3 pr-4 py-2 hover:shadow-2xl md:p-0"
+                  >ABOUT</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:line-through hover:ease-in text-black md:text-white md:border-0 block pl-3 pr-4 py-2 hover:shadow-2xl md:p-0"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:line-through hover:ease-in text-black md:text-white md:border-0 block pl-3 pr-4 py-2 hover:shadow-2xl md:p-0"
+                  >MEDIA</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:line-through hover:hover:delay-300 text-black md:text-white md:border-0 block pl-3 pr-4 py-2 hover:shadow-2xl md:p-0"
+                  >SERVICE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- create a div for our header -->
+      <div
+        class="justify-center items-center md:items-start flex flex-wrap min-h-96"
+      >
+        <h1
+          class="text-center tracking-widest text-4xl md:text-8xl max-w-2xl md:max-w-6xl text-white font-black py-48 md:py-16 font-sans"
+        >
+          A BLOG FOR SCIENCE RESEARCH COMMUNITY
+        </h1>
+      </div>
+
+      <!-- last header: media icons and  -->
+      <div class="last-header flex justify-between items-center">
+        <div class="">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbnN0YWdyYW0iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgeD0iMiIgeT0iMiIgcng9IjUiIHJ5PSI1Ii8+PHBhdGggZD0iTTE2IDExLjM3QTQgNCAwIDEgMSAxMi42MyA4IDQgNCAwIDAgMSAxNiAxMS4zN3oiLz48bGluZSB4MT0iMTcuNSIgeDI9IjE3LjUxIiB5MT0iNi41IiB5Mj0iNi41Ii8+PC9zdmc+"
+            class="px-4 py-2"
+            alt=""
+          />
+
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mYWNlYm9vayI+PHBhdGggZD0iTTE4IDJoLTNhNSA1IDAgMCAwLTUgNXYzSDd2NGgzdjhoNHYtOGgzbDEtNGgtNFY3YTEgMSAwIDAgMSAxLTFoM3oiLz48L3N2Zz4="
+            class="px-4 py-2"
+            alt=""
+          />
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10d2l0dGVyIj48cGF0aCBkPSJNMjIgNHMtLjcgMi4xLTIgMy40YzEuNiAxMC05LjQgMTcuMy0xOCAxMS42IDIuMi4xIDQuNC0uNiA2LTJDMyAxNS41LjUgOS42IDMgNWMyLjIgMi42IDUuNiA0LjEgOSA0LS45LTQuMiA0LTYuNiA3LTMuOCAxLjEgMCAzLTEuMiAzLTEuMnoiLz48L3N2Zz4="
+            class="px-4 py-2"
+            alt=""
+          />
+        </div>
+        <p
+          class="tracking-widest text-2xl md:text-4xl text-white font-semibold font-sans hidden md:block text-center"
+        >
+          CONNECT WITH SCIENTIST AROUND WORLD
+        </p>
+        <div
+          class="
+        "
+        >
+          <lord-icon
+            src="https://cdn.lordicon.com/nqisoomz.json"
+            trigger="loop"
+            delay="2000"
+            stroke="bold"
+            colors="primary:#000000,secondary:#ffffff,tertiary:#ffffff,quaternary:#ffffff"
+            style="width: 100px; height: 100px; z-index: -1"
+          >
+          </lord-icon>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider Section (new section separating the content from video)  -->
+    <section
+      class="relative bg-100 bg-no-repeat bg-center bg-cover from-black via-black-900 to-black opacity-100 bg-[url('https://th.bing.com/th/id/R.4736291d185e49c728cc0116fb2d7bce?rik=r0TkFpgvOOBnfw&pid=ImgRaw&r=0')] py-20 block md:flex justify-center items-center md:justify-between h-[1000]"
+    >
+      <div class="relative md:0 md:m-6 block flex justify-center">
+        <!-- First box (bottom)  -->
+        <div
+          class="w-48 md:w-80 h-40 md:h-80 bg-100 bg-no-repeat bg-center bg-cover bg-[url('https://th.bing.com/th/id/OIP.mSbqvXkFs46vgEVax6djUQHaEo?rs=1&pid=ImgDetMain')] mt-20 mt-20 ml-20 md:ml-20 rounded-md"
+        ></div>
+        <!-- Second box (top)  -->
+        <div
+          class="w-40 md:w-40 h-32 md:h-40 bg-100 bg-no-repeat bg-center bg-cover bg-[url('https://img.freepik.com/premium-photo/realistic-photography-nikola-tesla-his-laboratory_900168-2156.jpg')] rounded-md absolute top-0 left-10 md:left-2"
+        ></div>
+      </div>
+
+      <!-- another div for write up  -->
+      <div
+        class="flex-col items-center justify-start md:justify-center mt-20 md:mt-0 max-w-2xl md:max-w-md text-center md:text-start text-white text-center"
+      >
+        <p
+          class="tracking-widest text-2xl md:text-4xl font-semibold font-sans shadow-2xl"
+        >
+          ONE STEP FOR MAN......
+        </p>
+        <h1
+          class="tracking-widest text-2xl md:text-3xl font-black font-sans my-10 font-sans shadow-2xl"
+        >
+          LET'S COME TOGETHER TO ARCHIVE SCIENCE LIMITATIONS DESPITE THE
+          POLITICAL,FINICIAL AND NATIONALITY PREDICAMENT
+        </h1>
+        <div class="text-center flex justify-center">
+          <button
+            class="bg-blue-900 text-white p-5 rounded-md shadow-2xl hover:bg-transparent hover:text-black flex items-center justify-center"
+          >
+            JOIN
+            <lord-icon
+              src="https://cdn.lordicon.com/abaxrbtq.json"
+              trigger="loop"
+              stroke="light"
+              colors="primary:#9cf4df,secondary:#e4e4e4"
+              style="width: 30px; height: 30px; padding-left: 3px"
+            >
+            </lord-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Another section or main content below the video  -->
+    <section class="relative bg-white py-20 m-6">
+      <section class="py-10">
+        <!-- Flex container for large screens -->
+        <div
+          class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-cover bg-center w-full lg:w-1/3 h-64 p-4 rounded-lg shadow-md"
+            style="
+              background-image: url('https://th.bing.com/th/id/OIP.QGviernRHTeGJGUzulRtsQHaEK?rs=1&pid=ImgDetMain');
+            "
+          >
+            <div
+              class="bg-black bg-opacity-50 p-4 h-full flex flex-col justify-end"
+            >
+              <h3 class="text-white text-2xl font-bold">ELON MUSK</h3>
+              <p class="text-white mt-2">
+                A Very Elite Member of the International space project
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-cover bg-center w-full lg:w-1/3 h-64 p-4 rounded-lg shadow-md"
+            style="
+              background-image: url('https://th.bing.com/th/id/OIP.iOueDPgcmp4PjDm4qUoe3wHaEl?rs=1&pid=ImgDetMain');
+            "
+          >
+            <div
+              class="bg-black bg-opacity-50 p-4 h-full flex flex-col justify-end"
+            >
+              <h3 class="text-white text-2xl font-bold">ROBERT LANGER</h3>
+              <p class="text-white mt-2">
+                He will be researching and leading the Genetic Cross breading of
+                DNA's in order to understand Life itself
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-cover bg-center w-full lg:w-1/3 h-64 p-4 rounded-lg shadow-md"
+            style="
+              background-image: url('https://th.bing.com/th/id/OIP.xd70AHGJkxny1DxINTQ-HgHaE-?rs=1&pid=ImgDetMain');
+            "
+          >
+            <div
+              class="bg-black bg-opacity-50 p-4 h-full flex flex-col justify-end"
+            >
+              <h3 class="text-white text-2xl font-bold">FRANCISCO MATORRAS</h3>
+              <p class="text-white mt-2">
+                He will be leading the Technical Groups in hope to hance qauntum
+                energy and surpass speed of light
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Quick action section -->
+    <section class="container mx-auto p-4">
+      <h2 class="text-xl font-semibold">COMMENTS</h2>
+      <section
+        class="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- action card -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="text-white p-4 rounded-md shadow-2xl">
+            <img
+              src="https://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpghttps://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpg"
+              height="30"
+              width="50"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Robert Hook the 5th</h3>
+            <p class="font-light text-sm">
+              Quantum manipulation could be possible in some years to come, this
+              is great
+            </p>
+          </div>
+        </div>
+        <!-- action card -->
+        <!-- action card -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="text-white p-4 rounded-md shadow-2xl">
+            <img
+              src="https://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpghttps://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpg"
+              height="30"
+              width="50"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Thomos headson</h3>
+            <p class="font-light text-sm">
+              I hope the Political and agency don't mess this up , because they
+              will would hold humanity back
+            </p>
+          </div>
+        </div>
+        <!-- action card -->
+        <!-- action card -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="text-white p-4 rounded-md shadow-2xl">
+            <img
+              src="https://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpghttps://lifebeyondsportmedia.com/bestanden/James-Dyson/1._James_Dyson800x600.jpg"
+              height="30"
+              width="50"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">H wells</h3>
+            <p class="font-light text-sm">
+              This is brillant, we could be able to archive quantum fusion and
+              how to understand space time manipulation
+            </p>
+          </div>
+        </div>
+      </section>
+      <label for="comments">COMMENT YOUR OPINION</label>
+      <input
+        type="text"
+        placeholder="comment"
+        class="border border-2 border-black rounded w-64 h-32 p-5"
+      />
+    </section>
+
+    <!-- footer -->
+    <footer class="mx-auto p-5 bg-black text-white">
+      <!-- parent -->
+      <div
+        class="block md:flex justify-center md:justify-between items-center p-5 text-center md:text-start"
+      >
+        <!-- first child -->
+        <div class=" ">
+          <!-- head -->
+          <h1 class="py-5">Contact US</h1>
+          <!-- head end -->
+          <!-- email -->
+          <a href="https://www.email.com" class="text-blue py-10"
+            >esebamenemmanuel@gmail.com</a
+          >
+          <!-- listed -->
+          <ul class="flex justify-center md:justify-start py-5">
+            <li>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbnN0YWdyYW0iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgeD0iMiIgeT0iMiIgcng9IjUiIHJ5PSI1Ii8+PHBhdGggZD0iTTE2IDExLjM3QTQgNCAwIDEgMSAxMi42MyA4IDQgNCAwIDAgMSAxNiAxMS4zN3oiLz48bGluZSB4MT0iMTcuNSIgeDI9IjE3LjUxIiB5MT0iNi41IiB5Mj0iNi41Ii8+PC9zdmc+"
+                class="py-2"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1mYWNlYm9vayI+PHBhdGggZD0iTTE4IDJoLTNhNSA1IDAgMCAwLTUgNXYzSDd2NGgzdjhoNHYtOGgzbDEtNGgtNFY3YTEgMSAwIDAgMSAxLTFoM3oiLz48L3N2Zz4="
+                class="px-4 py-2"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10d2l0dGVyIj48cGF0aCBkPSJNMjIgNHMtLjcgMi4xLTIgMy40YzEuNiAxMC05LjQgMTcuMy0xOCAxMS42IDIuMi4xIDQuNC0uNiA2LTJDMyAxNS41LjUgOS42IDMgNWMyLjIgMi42IDUuNiA0LjEgOSA0LS45LTQuMiA0LTYuNiA3LTMuOCAxLjEgMCAzLTEuMiAzLTEuMnoiLz48L3N2Zz4="
+                class="px-4 py-2"
+                alt=""
+              />
+            </li>
+          </ul>
+          <!-- list end -->
+        </div>
+        <!-- fisrt child end -->
+
+        <!-- second child secornd -->
+        <div>
+          <h1 class="py-5">TECNICAL PROJECT</h1>
+
+          <ul class="">
+            <li>PARTICLE ACCELERATOR</li>
+            <li>QUANTUM FUNSION</li>
+            <li>SURFACE TENSION</li>
+            <li>COMPUSION</li>
+          </ul>
+        </div>
+        <!-- secornd child  -->
+
+        <!-- second child secornd -->
+        <div>
+          <h1 class="py-5">BIO PROJECT</h1>
+
+          <ul class="">
+            <li>CELLS</li>
+            <li>DNA</li>
+            <li>ATOM</li>
+            <li>NETRON</li>
+          </ul>
+        </div>
+        <!-- secornd child  -->
+
+        <!-- second child secornd -->
+        <div>
+          <h1 class="py-5">ATOM</h1>
+
+          <ul class="">
+            <li>PROTON</li>
+            <li>NEUTRON</li>
+            <li>ELECTRON</li>
+            <li>QUANTUM SPIN</li>
+          </ul>
+        </div>
+        <!-- secornd child  -->
+        <!-- second child secornd -->
+        <div>
+          <h1 class="py-5">ENERGY</h1>
+
+          <ul class="">
+            <li>DIFUSSION ENERGY</li>
+            <li>QUANTUM ENERGY</li>
+            <li>TRANSMISSION ENERGY</li>
+            <li>MOTION ENERGY</li>
+          </ul>
+        </div>
+        <!-- secornd child  -->
+        <!-- second child secornd -->
+        <div>
+          <h1 class="py-5">SOFTWARE</h1>
+
+          <ul class="">
+            <li>QUANTUM COMPUTER</li>
+            <li>CELLULAR COMPUTER</li>
+            <li>AI ADVANCEMENT</li>
+            <li>HOLOGRAM</li>
+          </ul>
+        </div>
+        <!-- secornd child  -->
+      </div>
+      <!-- paarent end -->
+    </footer>
+    <!-- footer -->
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="j.js"></script>
+  </body>
+</html>
+
+<!-- 
+What You're Aiming For
+
+Tailwind CSS Checkpoint Exercise 2
+Project Overview:
+Create a landing page for an online blog using Tailwind CSS. This checkpoint will focus on applying Tailwind classes to structure the layout, style components, and enhance the visual of the webpage.
+
+Requirements:
+Header Section:
+
+Design a header with the blog's name/logo and a navigation menu.
+Utilize Tailwind classes for styling, including background color, text color, and padding.
+Featured Posts Section:
+
+Showcase three featured blog posts with images, titles, and excerpts.
+Apply Tailwind classes for cards, image styling, and text alignment.
+Category Section:
+
+Display categories for the blog posts in a visually appealing manner.
+Utilize Tailwind classes for badges or tags.
+Recent Posts Section:
+
+Create a section displaying a list of recent blog posts with titles and publication dates.
+Apply Tailwind classes for text styling and spacing.
+Newsletter Subscription Form:
+
+Include a simple form for newsletter subscription.
+Utilize Tailwind classes for form styling, input fields, and button styling.
+Footer:
+
+Design a footer with social media icons, copyright information, and links.
+Use Tailwind classes for flexbox, icon styling, and text alignment.
+ 
+ 
+ 
+
+
+Instructions
+
+Technical Requirements:
+Use Tailwind CSS classes directly in your HTML file.
+Leverage utility classes for styling and layout (e.g., bg, text, p, m, flex, grid, etc.).
+Ensure that the webpage is responsive and looks good on both desktop and mobile screens.
+Additional Guidelines:
+Explore Tailwind CSS documentation (https://tailwindcss.com/docs) to find the appropriate classes for styling.
+Experiment with responsive classes to ensure a good user experience on different devices.
+Encourage students to think about the overall visual hierarchy and aesthetics of the webpage. -->
